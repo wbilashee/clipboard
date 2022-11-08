@@ -1,0 +1,63 @@
+.snippets {
+  margin: 3rem 0;
+
+  &__details {
+    width: 85%;
+    margin: 4.5rem auto;
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(tab) {
+      width: auto;
+      grid-template-columns: 1.1fr 1fr;
+    }
+
+    &__image {
+      img {
+        width: 100%;
+        margin-left: 0;
+
+        @include breakpoint-up(tab) {
+          margin-left: -2.15rem;
+        }
+      }
+    }
+
+    &__features {
+      text-align: center;
+
+      @include breakpoint-up(tab) {
+        text-align: justify;
+      }
+
+      &__container {
+        display: grid;
+        padding: 4rem 0;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+        @include breakpoint-up(tab) {
+          padding: 1rem 0 0 1rem;
+        }
+
+        @include breakpoint-up(large) {
+          padding: 4rem 0 0 4rem;
+        }
+
+        h3 {
+          font-size: 1.375rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          width: auto;
+          font-size: 1rem;
+          line-height: 1.75;
+
+          @include breakpoint-up(tab) {
+            width: 21rem;
+          }
+        }
+      }
+    }
+  }
+}

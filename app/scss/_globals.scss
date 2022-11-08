@@ -19,13 +19,42 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   color: $darkGrayishBlue;
 }
 
 p {
   color: $grayishBlue;
   line-height: 1.5;
+}
+
+.section__header {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+
+  @include breakpoint-up(tab) {
+    width: 42rem;
+  }
+
+  h2 {
+    margin: 1rem 0;
+    font-size: 1.7rem;
+
+    @include breakpoint-up(large) {
+      font-size: 2.125rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+
+    @include breakpoint-up(large) {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 .btn__container {
