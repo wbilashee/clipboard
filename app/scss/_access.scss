@@ -1,0 +1,14 @@
+.access {
+  &__image {
+    width: 85%;
+    margin: 4rem auto;
+
+    @include breakpoint-up(large) {
+      width: 52rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

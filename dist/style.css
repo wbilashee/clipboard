@@ -159,7 +159,7 @@ p {
 }
 
 .snippets {
-  margin: 3rem 0;
+  margin: 3rem 0 7rem;
 }
 .snippets__details {
   width: 85%;
@@ -218,4 +218,17 @@ p {
   .snippets__details__features__container p {
     width: 21rem;
   }
+}
+
+.access__image {
+  width: 85%;
+  margin: 4rem auto;
+}
+@media (min-width: 64em) {
+  .access__image {
+    width: 52rem;
+  }
+}
+.access__image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
