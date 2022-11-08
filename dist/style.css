@@ -15,4 +15,115 @@ html {
 body {
   font-size: 1.125rem;
   font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1,
+h2 {
+  color: hsl(210deg, 10%, 33%);
+}
+
+p {
+  color: hsl(201deg, 11%, 66%);
+  line-height: 1.5;
+}
+
+.btn__container {
+  padding: 3rem 0;
+}
+.btn__container .btn {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-family: inherit;
+  border-radius: 1.875rem;
+  padding: 0.8125rem 2.1875rem;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 40em) {
+  .btn__container .btn {
+    width: auto;
+  }
+}
+.btn__container .btn:hover {
+  opacity: 0.7;
+}
+.btn__container .btn-ios {
+  margin-right: 0;
+  margin-bottom: 1.75rem;
+  background: hsl(171deg, 66%, 44%);
+  border-bottom: 3px solid #209f88;
+  box-shadow: 0px 4px 15px rgba(38, 186, 164, 0.4784313725);
+}
+@media (min-width: 40em) {
+  .btn__container .btn-ios {
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+  }
+}
+.btn__container .btn-mac {
+  background: hsl(233deg, 100%, 69%);
+  border-bottom: 3px solid #5161d8;
+  box-shadow: 0px 4px 15px rgba(97, 115, 255, 0.4784313725);
+}
+
+.grid {
+  display: grid;
+}
+.grid-pi-c {
+  place-items: center;
+}
+
+.header {
+  min-height: 100vh;
+  background: url("../images/bg-header-mobile.png") no-repeat top/contain;
+}
+@media (min-width: 40em) {
+  .header {
+    background: url("../images/bg-header-desktop.png") no-repeat top/contain;
+  }
+}
+.header__content {
+  width: 85%;
+  text-align: center;
+  padding: 8rem 0 3rem;
+}
+@media (min-width: 48em) {
+  .header__content {
+    width: 41.25rem;
+  }
+}
+@media (min-width: 64em) {
+  .header__content {
+    padding: 4rem 0 3rem;
+  }
+}
+.header__logo img {
+  width: 8.45rem;
+}
+@media (min-width: 40em) {
+  .header__logo img {
+    width: 7.5rem;
+  }
+}
+.header__text h1 {
+  font-size: 2rem;
+  margin: 4rem 0 1rem;
+}
+@media (min-width: 64em) {
+  .header__text h1 {
+    font-size: 2.6rem;
+    margin: 2.5rem 0 1rem;
+  }
+}
+.header__text p {
+  font-size: 1.1rem;
+}
+@media (min-width: 64em) {
+  .header__text p {
+    font-size: 1.1875rem;
+  }
 }/*# sourceMappingURL=style.css.map */
