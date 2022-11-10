@@ -281,7 +281,7 @@ p {
 }
 .workflow__companies {
   flex-wrap: wrap;
-  margin: 7.5rem auto;
+  margin: 7.5rem auto 5rem;
 }
 .workflow__companies div {
   width: 100%;
