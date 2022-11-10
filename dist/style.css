@@ -57,6 +57,15 @@ p {
   }
 }
 
+.download__buttons {
+  width: 85%;
+}
+@media (min-width: 48em) {
+  .download__buttons {
+    width: auto;
+  }
+}
+
 .btn__container {
   padding: 3rem 0;
 }
@@ -299,4 +308,113 @@ p {
 }
 .workflow__companies img {
   width: 7.5rem;
+}
+
+.footer {
+  padding: 3rem 0;
+  margin-top: 6rem;
+  background: #f5f6f8;
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .footer {
+    padding: 2.5rem 0;
+    text-align: justify;
+  }
+}
+.footer__container {
+  width: 85%;
+  margin: auto;
+  column-gap: 0.75rem;
+  place-items: center;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 64em) {
+  .footer__container {
+    place-items: start;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (min-width: 64em) {
+  .footer__container {
+    width: 80%;
+  }
+}
+.footer a {
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+@media (min-width: 64em) {
+  .footer a {
+    font-size: 1.05rem;
+  }
+}
+.footer__logo {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  .footer__logo {
+    margin-bottom: 0;
+  }
+}
+.footer__logo img {
+  width: 3.25rem;
+}
+.footer__links {
+  flex-direction: column;
+}
+.footer__links a {
+  padding: 0.85rem;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 64em) {
+  .footer__links a {
+    padding: 0;
+  }
+}
+.footer__links a:first-child {
+  margin-bottom: 0;
+}
+@media (min-width: 64em) {
+  .footer__links a:first-child {
+    margin-bottom: 1.15rem;
+  }
+}
+.footer__links a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+.footer__social {
+  margin-top: 2.5rem;
+  align-self: center;
+  justify-self: center;
+}
+@media (min-width: 64em) {
+  .footer__social {
+    margin-top: 0;
+    justify-self: end;
+  }
+}
+.footer__social a:not(:last-child) {
+  margin-right: 2.25rem;
+}
+@media (min-width: 64em) {
+  .footer__social a:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+.footer__social a svg {
+  fill: #4c545c;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social a:hover svg {
+  fill: hsl(171deg, 66%, 44%);
+}
+.footer .attribution {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.footer .attribution a {
+  font-size: 0.875rem;
 }/*# sourceMappingURL=style.css.map */

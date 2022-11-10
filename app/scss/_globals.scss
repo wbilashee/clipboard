@@ -57,6 +57,14 @@ p {
   }
 }
 
+.download__buttons {
+  width: 85%;
+
+  @include breakpoint-up(tab) {
+    width: auto;
+  }
+}
+
 .btn__container {
   padding: 3rem 0;
 

@@ -1,0 +1,117 @@
+.footer {
+  padding: 3rem 0;
+  margin-top: 6rem;
+  background: #f5f6f8;
+  text-align: center;
+
+  @include breakpoint-up(large) {
+    padding: 2.5rem 0;
+    text-align: justify;
+  }
+
+  &__container {
+    width: 85%;
+    margin: auto;
+    column-gap: 0.75rem;
+    place-items: center;
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(large) {
+      place-items: start;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      width: 80%;
+    }
+  }
+
+  a {
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: $darkGrayishBlue;
+
+    @include breakpoint-up(large) {
+      font-size: 1.05rem;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 3.25rem;
+    }
+  }
+
+  &__links {
+    flex-direction: column;
+
+    a {
+      padding: 0.85rem;
+      transition: all 0.3s ease-in-out;
+
+      @include breakpoint-up(large) {
+        padding: 0;
+      }
+
+      &:first-child {
+        margin-bottom: 0;
+
+        @include breakpoint-up(large) {
+          margin-bottom: 1.15rem;
+        }
+      }
+
+      &:hover {
+        color: $strongCyan;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 2.5rem;
+    align-self: center;
+    justify-self: center;
+
+    @include breakpoint-up(large) {
+      margin-top: 0;
+      justify-self: end;
+    }
+
+    a {
+      &:not(:last-child) {
+        margin-right: 2.25rem;
+
+        @include breakpoint-up(large) {
+          margin-right: 1rem;
+        }
+      }
+
+      svg {
+        fill: #4c545c;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          fill: $strongCyan;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.875rem;
+
+    a {
+      font-size: 0.875rem;
+    }
+  }
+}
